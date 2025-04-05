@@ -1,9 +1,10 @@
 function minDate(dates) {
-  //write you code here
+  const copy = [...dates];
+  copy.sort(); // Lexicographical sort works because of YYYY/MM/DD format
+  return copy[0];
 }
 
 // Do not change the code
-
 var dates = [
   "2023/03/01",
   "2023/03/02",
@@ -38,3 +39,4 @@ var dates = [
 ];
 
 alert(minDate(dates));
+
